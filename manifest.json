@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Remove Google Play Count",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://play.google.com/music/*",
+				"http://play.google.com/music/*"
+			],
+			"js": ["jquery-3.2.1.min.js", "content.js"]
+		}
+	],
+	"browser_action": {
+		"default_icon": "PleaseStopCounting.png"
+	}
+}
